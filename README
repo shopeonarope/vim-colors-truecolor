@@ -1,0 +1,11 @@
+vim-monokai-truecolor
+=====================
+
+A basic monokai color scheme that relies on true color support for terminal
+colors.
+
+
+Terminal colors are assumed to be assign in the same order as:
+
+https://github.com/chlorm/elvish-color-schemes/blob/master/color-scheme.elv
+
