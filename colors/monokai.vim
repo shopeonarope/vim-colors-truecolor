@@ -171,7 +171,7 @@ let g:python_print_as_function = 0
 " syn keyword pythonFuncStatement def class nextgroup=pythonFunction skipwhite
 " hi link pythonFuncStatement Statement
 highlight default link pythonStatement Keyword
-highlight default link pythonBuiltinFunc Statement
+highlight default link pythonBuiltinFunc Builtin
 highlight default link pythonRun Comment
 " Arbitrarily using boolean for the correct color
 highlight default link pythonNone Boolean
