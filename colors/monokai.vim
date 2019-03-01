@@ -158,6 +158,7 @@ highlight default link goConstants Constant
 " https://github.com/LnL7/vim-nix
 highlight default link nixArgumentDefinition FunctionArgument
 highlight default link nixAttribute Function
+highlight default link nixInterpolationParam FunctionArgument
 highlight default link nixList FunctionArgument
 highlight default link nixNamespacedBuiltin Builtin
 highlight default link nixSimpleFunctionArgument FunctionArgument
