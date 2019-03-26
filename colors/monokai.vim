@@ -1,4 +1,4 @@
-" Copyright (c) 2015-2018, Cody Opel <codyopel@gmail.com>
+" Copyright (c) 2015-2019, Cody Opel <codyopel@gmail.com>
 "
 " Licensed under the Apache License, Version 2.0 (the "License");
 " you may not use this file except in compliance with the License.
@@ -135,6 +135,11 @@ call s:hi("Statement", s:c01, "", "", "")
 call s:hi("String", s:c03, "", "", "")
 call s:hi("Todo", s:c14, "", "italic", "")
 call s:hi("Type", s:c06, "", "", "")
+
+" Fix CursorLine causing SpecialKey characters to be highlighted as Normal.
+autocmd VimEnter * call matchadd('SpecialKey', '\s\+', -1)
+autocmd VimEnter * call matchadd('SpecialKey', '\n', -1)
+autocmd VimEnter * call matchadd('SpecialKey', '\t\+', -1)
 
 "
 "" Plugin/Syntax Overrides
