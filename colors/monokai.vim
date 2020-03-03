@@ -113,6 +113,7 @@ call s:hi("DiffText", s:c15, "", "bold", "")
 call s:hi("EndOfBuffer", s:c01, s:altclr(s:black, s:c08), "", "")
 call s:hi("ErrorMsg", s:c00, s:c09, "", "")
 call s:hi("Float", s:c05, "", "", "")
+call s:hi("Folded", "", s:c00, "", "")
 call s:hi("Function", s:c02, "", "", "")
 call s:hi("FunctionArgument", s:c09, "", "", "")  " Should be for overload
 call s:hi("Identifier", s:c02, "", "none", "")
