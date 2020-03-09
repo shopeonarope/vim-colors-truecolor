@@ -192,8 +192,10 @@ highlight default link shLoop Keyword
 highlight default link shOperator Normal
 highlight default link shQuote String
 highlight default link shSetList Normal
+highlight default link shStatement Builtin
 " These are not builtins
 highlight default link bashStatement Normal
+highlight default link kshStatement Normal
 
 " Bundled vim.vim
 highlight default link vimCommand Keyword
