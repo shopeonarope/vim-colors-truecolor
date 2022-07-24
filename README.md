@@ -1,8 +1,14 @@
 # vim-colors-truecolor
 
-A basic color scheme that uses the terminals base16 colors and configurable
-gui colors.
+A color scheme that supports any base16 color pallete.
 
-Terminal colors are assumed to be assigned in the same order as:
+```lua
+vim.cmd('colorscheme truecolor')
+```
 
-https://github.com/chlorm/elvish-color-schemes/blob/master/color-scheme.elv
+```lua
+vim.g.truecolor_colors = {
+    -- See lua/truecolor.lua for all options.
+    black = { ansi = '00', rgb = '#000000' }
+}
+```
