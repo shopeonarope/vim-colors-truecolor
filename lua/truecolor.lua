@@ -174,9 +174,7 @@ l('elvishTSOperator', 'Builtin')
 -- cstrahan/tree-sitter-nix
 l('nixTSStringSpecial', 'String')
 l('nixTSPunctDelimiter', 'Delimiter')
---l(nixTSField Delimiter
 l('nixTSVariable', 'Keyword')
---l(nixTSKeyword Comment
 l('nixTSOperator', 'Builtin')
 
 l('bashTSVariable', 'Function')
