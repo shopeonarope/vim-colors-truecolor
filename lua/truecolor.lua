@@ -73,7 +73,8 @@ local c = {
     bright_cyan    = o.bright_cyan    or { ansi = '14', rgb = '#75715e' },
     bright_white   = o.bright_white   or { ansi = '15', rgb = '#f8f8f2' },
     -- FIXME: Alter colorscheme to include a similar color
-    nontext = { ansi = '237', rgb = '#3a3a3a' }
+    nontext = { ansi = '237', rgb = '#3a3a3a' },
+    none = { ansi = a.none, rgb = a.none },
 }
 
 --
@@ -104,9 +105,9 @@ h('CursorLineNr', { fg = c.yellow, attr = a.none })
 h('Debug', { fg = c.bright_white, attr = a.bold })
 h('Define', { fg = c.red })
 h('Delimiter', { fg = c.yellow })
-h('DiffAdd', { fg = c.green, bg = c.black })
-h('DiffChange', { fg = c.yellow, bg = c.black })
-h('DiffDelete', { fg = c.red, bg = c.black })
+h('DiffAdd', { fg = c.green, bg = c.none })
+h('DiffChange', { fg = c.yellow, bg = c.none })
+h('DiffDelete', { fg = c.red, bg = c.none })
 h('DiffText', { fg = c.bright_white, attr = a.bold })
 h('EndOfBuffer', { fg = c.red, bg = c.bright_black })
 --h('Error', { })
@@ -150,6 +151,17 @@ h('Type', { fg = c.magenta })
 --
 ---- Plugin/Syntax Overrides
 --
+
+-- gitsigns.nvim
+h('GitSignsAdd', { fg = c.green, bg = c.black })
+h('GitSignsChange', { fg = c.yellow, bg = c.black })
+h('GitSignsDelete', { fg = c.red, bg = c.black })
+
+-- LSP sign column
+h('DiagnosticSignError', { fg = c.red, bg = c.black })
+h('DiagnosticSignWarn', { fg = c.yellow, bg = c.black })
+h('DiagnosticSignInfo', { fg = c.bright_black, bg = c.black })
+h('DiagnosticSignHint', { fg = c.bright_black, bg = c.black })
 
 -- nvim-treesitter
 l('TSFuncBuiltin', 'Builtin')
