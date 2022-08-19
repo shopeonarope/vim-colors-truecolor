@@ -154,15 +154,30 @@ h('VertSplit', { fg = c.bright_black, bg = c.bright_black })
 --
 
 -- gitsigns.nvim
-h('GitSignsAdd', { fg = c.green, bg = c.black })
-h('GitSignsChange', { fg = c.yellow, bg = c.black })
-h('GitSignsDelete', { fg = c.red, bg = c.black })
+h('GitSignsAdd', { fg = c.green })
+h('GitSignsChange', { fg = c.yellow })
+h('GitSignsDelete', { fg = c.red })
 
 -- LSP sign column
-h('DiagnosticSignError', { fg = c.red, bg = c.black })
-h('DiagnosticSignWarn', { fg = c.yellow, bg = c.black })
-h('DiagnosticSignInfo', { fg = c.bright_black, bg = c.black })
-h('DiagnosticSignHint', { fg = c.bright_black, bg = c.black })
+h('DiagnosticSignError', { fg = c.red })
+h('DiagnosticSignWarn', { fg = c.yellow })
+h('DiagnosticSignInfo', { fg = c.bright_black })
+h('DiagnosticSignHint', { fg = c.bright_black })
+
+-- nvim-scrollbar
+h('ScrollbarHandle', { bg = c.nontext })
+h('ScrollbarSearch', { fg = c.magenta })
+h('ScrollbarSearchHandle', { fg = c.magenta, bg = c.nontext })
+h('ScrollbarError', { fg = c.red })
+h('ScrollbarErrorHandle', { fg = c.red, bg = c.nontext })
+h('ScrollbarInfo', { fg = c.blue })
+h('ScrollbarInfoHandle', { fg = c.blue, bg = c.nontext })
+h('ScrollbarHint', { fg = c.white })
+h('ScrollbarHintHandle', { fg = c.white, bg = c.nontext })
+h('ScrollbarMisc', { fg = c.white })
+h('ScrollbarMiscHandle', { fg = c.white, bg = c.nontext })
+h('ScrollbarWarn', { fg = c.yellow })
+h('ScrollbarWarnHandle', { fg = c.yellow, bg = c.nontext })
 
 -- nvim-treesitter
 l('TSFuncBuiltin', 'Builtin')
