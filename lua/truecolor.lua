@@ -51,6 +51,8 @@ local a = {
     bold = 'bold',
     italics = 'italics',
     none = 'none',
+    reverse = 'reverse',
+    underline = 'underline',
 }
 -- User defined colors.
 local o = vim.g.truecolor_colors or {}
