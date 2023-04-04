@@ -147,7 +147,6 @@ h('PreProc', { fg = c.magenta })
 h('Question', { fg = c.green })
 h('Repeat', { fg = c.blue })
 h('Search', { fg = c.black, bg = c.yellow })
-h('SignColumn', { bg = c.bright_black })
 h('Special', { fg = c.magenta })
 h('SpecialKey', { fg = c.blue })
 --h('SpecialChar', { })
@@ -174,7 +173,7 @@ h('Type', { fg = c.magenta })
 --h('Typedef', { })
 h('Underlined', { fg = c.magenta, attr = a.underline })
 h('VertSplit', { fg = c.white, bg = c.bright_black, attr = a.none })
-h('Visual', { fg = c.none, bg = c.none, attr = a.inverse })
+h('Visual', { fg = c.none, bg = c.none, attr = a.reverse })
 h('WarningMsg', { fg = c.red })
 h('WildMenu', { fg = c.black, bg = c.bright_yellow })
 
@@ -236,3 +235,15 @@ l('bashTSVariable', 'Function')
 
 -- vim-better-whitespace
 h('ExtraWhitespace', { bg = c.red })
+
+-- Telescope
+h('NormalFloat', {fg = c.light_gray})
+h('Pmenu', {fg = c.bright_white, bg = c.black})
+
+-- GitSigns
+h('GitSignsDelete',  {attr = a.bold, fg = c.red})
+h('GitSignsAdd',  {attr = a.bold, ctermfg = c.green})
+h('GitSignsChange',  {attr = a.bold, fg = c.yellow})
+h('GitSignsUntracked',  {attr = a.bold, fg = c.yellow})
+h('GitSignsCurrentLineBlame',  {fg = c.bright_black})
+h('SignColumn',  { bg = c.none })
