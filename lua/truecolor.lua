@@ -53,7 +53,6 @@ local a = {
     none = 'none',
     reverse = 'reverse',
     underline = 'underline',
-    nocombine = 'nocombine',
 }
 -- User defined colors.
 local o = vim.g.truecolor_colors or {}
@@ -248,11 +247,3 @@ h('GitSignsChange',  {attr = a.bold, fg = c.yellow})
 h('GitSignsUntracked',  {attr = a.bold, fg = c.yellow})
 h('GitSignsCurrentLineBlame',  {fg = c.bright_black})
 h('SignColumn',  { bg = c.none })
-
--- IndentBlankline
-h('IndentBlanklineIndent1', { fg = '#E06C75', attr = a.nocombine })
-h('IndentBlanklineIndent2', { fg = '#E5C07B', attr = a.nocombine })
-h('IndentBlanklineIndent3', { fg = '#98C379', attr = a.nocombine })
-h('IndentBlanklineIndent4', { fg = '#56B6C2', attr = a.nocombine })
-h('IndentBlanklineIndent5', { fg = '#61AFEF', attr = a.nocombine })
-h('IndentBlanklineIndent6', { fg = '#C678DD', attr = a.nocombine })
