@@ -237,7 +237,7 @@ l('bashTSVariable', 'Function')
 h('ExtraWhitespace', { bg = c.red })
 
 -- Telescope
-h('NormalFloat', {fg = c.light_gray})
+h('NormalFloat', {fg = c.bright_black})
 h('Pmenu', {fg = c.bright_white, bg = c.black})
 
 -- GitSigns
